@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="conversor">
+        <div id="container">
+            <div id="instructions">
+                <h1>Temperature Conversor</h1>
+                <p>To convert your temperature, select an option and put the number in Celsius</p>
+            </div>
+            <div id="temperatures">
+                <div id="selectTemp">
+                    <div id="a">
+                        <input type="radio" name="tempMesure" class="radios" id="far" value="farenheit">
+                        <label for="far">Farenheit</label>
+                    </div>
+                    <div id="b">
+                        <input type="radio" name="tempMesure" class="radios" id="kel" value="kelvin">
+                        <label for="kel">Kelvin</label>
+                    </div>
+                </div>
+                <div id="user">
+                    <span>Temperature in Celsius:</span>
+                    <input id="celsius" type="number" placeholder="Type Here">
+                </div>
+                <span id="result">Temperature:</span> 
+                <div id="btn">
+                    <button id="convert" onclick="convertTemp()">Convert</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
